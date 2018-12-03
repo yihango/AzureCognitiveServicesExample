@@ -20,7 +20,7 @@ namespace ComputerVisionImgAnalyze
         // localImagePath = @"C:\Documents\LocalImage.jpg"
         private const string localImagePath = @"imgs/1.jpg";
 
-        private const string remoteImageUrl = "http://upload.wikimedia.org/wikipedia/commons/3/3c/Shaki_waterfall.jpg";
+        private const string remoteImageUrl = "https://gss2.bdstatic.com/9fo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=80c78b32a4d3fd1f3609a53c08754222/6c224f4a20a446230bbbbd7e9422720e0cf3d7bc.jpg";
 
         // 指定要返回的特性
         private static readonly List<VisualFeatureTypes> features =
@@ -46,7 +46,7 @@ namespace ComputerVisionImgAnalyze
             AnalyzeRemoteAsync(computerVision, remoteImageUrl).GetAwaiter().GetResult();
 
             // 本地图片
-            AnalyzeLocalAsync(computerVision, localImagePath).GetAwaiter().GetResult();
+            //AnalyzeLocalAsync(computerVision, localImagePath).GetAwaiter().GetResult();
 
 
             Console.WriteLine("按任意键键退出...");
