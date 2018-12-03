@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28010.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoIndexer", "VideoIndexer\VideoIndexer.csproj", "{82942CCB-8DF0-4A76-99DF-448187A46238}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputerVisionOCR", "ComputerVisionOCR\ComputerVisionOCR.csproj", "{D30769B3-4A86-4A59-A2A9-C0932620D4D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputerVisionImgAnalyze", "ComputerVisionImgAnalyze\ComputerVisionImgAnalyze.csproj", "{AF292F53-A137-4670-96C9-FEC09FB92F6E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{82942CCB-8DF0-4A76-99DF-448187A46238}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82942CCB-8DF0-4A76-99DF-448187A46238}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82942CCB-8DF0-4A76-99DF-448187A46238}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D30769B3-4A86-4A59-A2A9-C0932620D4D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D30769B3-4A86-4A59-A2A9-C0932620D4D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D30769B3-4A86-4A59-A2A9-C0932620D4D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D30769B3-4A86-4A59-A2A9-C0932620D4D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF292F53-A137-4670-96C9-FEC09FB92F6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF292F53-A137-4670-96C9-FEC09FB92F6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF292F53-A137-4670-96C9-FEC09FB92F6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF292F53-A137-4670-96C9-FEC09FB92F6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
