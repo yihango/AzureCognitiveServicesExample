@@ -28,7 +28,7 @@ namespace ComputerVisionOCR
         static void Main()
         {
 
-            string imageFilePath = @"imgs/1.png";
+            string imageFilePath = @"imgs/1.jpg";
             string imgUrl = "https://leizhangstorage.blob.core.chinacloudapi.cn/azureblog/ocr.jpg";
 
 
