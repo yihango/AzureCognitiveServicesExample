@@ -9,4 +9,10 @@
     <PackageReference Include="Microsoft.CognitiveServices.Speech" Version="1.1.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="azure语音测试.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
