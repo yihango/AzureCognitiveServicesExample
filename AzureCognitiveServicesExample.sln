@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoIndexer", "VideoIndexer\VideoIndexer.csproj", "{82942CCB-8DF0-4A76-99DF-448187A46238}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VideoIndexer", "VideoIndexer\VideoIndexer.csproj", "{82942CCB-8DF0-4A76-99DF-448187A46238}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputerVisionOCR", "ComputerVisionOCR\ComputerVisionOCR.csproj", "{D30769B3-4A86-4A59-A2A9-C0932620D4D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComputerVisionOCR", "ComputerVisionOCR\ComputerVisionOCR.csproj", "{D30769B3-4A86-4A59-A2A9-C0932620D4D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputerVisionImgAnalyze", "ComputerVisionImgAnalyze\ComputerVisionImgAnalyze.csproj", "{AF292F53-A137-4670-96C9-FEC09FB92F6E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComputerVisionImgAnalyze", "ComputerVisionImgAnalyze\ComputerVisionImgAnalyze.csproj", "{AF292F53-A137-4670-96C9-FEC09FB92F6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextToSpeech", "TextToSpeech\TextToSpeech.csproj", "{1BCCF847-DD78-4688-BC1A-AA6C3E9F1983}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{AF292F53-A137-4670-96C9-FEC09FB92F6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF292F53-A137-4670-96C9-FEC09FB92F6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF292F53-A137-4670-96C9-FEC09FB92F6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BCCF847-DD78-4688-BC1A-AA6C3E9F1983}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BCCF847-DD78-4688-BC1A-AA6C3E9F1983}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BCCF847-DD78-4688-BC1A-AA6C3E9F1983}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BCCF847-DD78-4688-BC1A-AA6C3E9F1983}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
