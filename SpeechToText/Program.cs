@@ -7,6 +7,8 @@ namespace SpeechToText
 {
     class Program
     {
+        // 官方文档地址：https://docs.microsoft.com/zh-cn/azure/cognitive-services/speech-service/quickstart-csharp-dotnetcore-windows
+
         // subscription key
         static string apiKey = "";
         // 地区
