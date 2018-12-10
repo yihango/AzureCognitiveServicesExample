@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComputerVisionImgAnalyze", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextToSpeech", "TextToSpeech\TextToSpeech.csproj", "{1BCCF847-DD78-4688-BC1A-AA6C3E9F1983}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpeechToText", "SpeechToText\SpeechToText.csproj", "{40500B41-51DB-4BB9-846E-48E50030C70E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{1BCCF847-DD78-4688-BC1A-AA6C3E9F1983}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1BCCF847-DD78-4688-BC1A-AA6C3E9F1983}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1BCCF847-DD78-4688-BC1A-AA6C3E9F1983}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40500B41-51DB-4BB9-846E-48E50030C70E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40500B41-51DB-4BB9-846E-48E50030C70E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40500B41-51DB-4BB9-846E-48E50030C70E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40500B41-51DB-4BB9-846E-48E50030C70E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
