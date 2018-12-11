@@ -31,7 +31,8 @@ namespace SpeechToText
 
             // 从音频文件识别
             var filePath = @"azure语音测试_16bit16khz.wav";
-            FormFile(filePath).Wait();
+            //filePath = @"再别康桥.wav";
+            //FormFile(filePath).Wait();
 
             // 从音频文件流识别
             /* 音频格式化配置

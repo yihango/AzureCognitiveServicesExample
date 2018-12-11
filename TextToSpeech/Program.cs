@@ -12,7 +12,7 @@ namespace TextToSpeech
 
 
         static string apiKey = "";// azure订阅key
-        static string resouceName = "";// azure中的资源名称
+        static string resouceName = "ai-azure-2018";// azure中的资源名称
 
         // 地区 (westus/eastasia/...)
         static string region = "eastasia";
@@ -48,10 +48,17 @@ namespace TextToSpeech
 
         static async Task Run()
         {
+
             //
 
-            Console.Write("请输入你想转换成语音的内容: ");
-            string text = Console.ReadLine();
+            //Console.Write("请输入你想转换成语音的内容: ");
+            //string text = Console.ReadLine();
+
+
+            var filePath = @"测试文本内容.txt";
+            var text = await File.ReadAllTextAsync(filePath, Encoding.UTF8);
+
+
             Console.WriteLine("正在获取token..请稍后..\n");
 
             string accessToken;
@@ -69,12 +76,13 @@ namespace TextToSpeech
                 return;
             }
 
-          
-            var body = string.Empty;
 
-            body = string.Format(bodyTemplate, "zh-CN", "zh-CN, HuihuiRUS", text);// 汉语-普通话
+
+
+            var body = string.Empty;
+            //body = string.Format(bodyTemplate, "zh-CN", "zh-CN, HuihuiRUS", text);// 汉语-普通话
             //body = string.Format(bodyTemplate, "zh-HK", "zh-HK, Tracy, Apollo", text);// 汉语-香港
-            //body = string.Format(bodyTemplate, "zh-TW", "zh-TW, Yating, Apollo", text);// 汉语-台湾
+            body = string.Format(bodyTemplate, "zh-TW", "zh-TW, Yating, Apollo", text);// 汉语-台湾
             //body = string.Format(bodyTemplate, "en-US", "en-US, ZiraRUS", text);// 英语
 
             using (var client = new HttpClient())
@@ -92,7 +100,8 @@ namespace TextToSpeech
                     request.Headers.Add("Connection", "Keep-Alive");
                     // 设置资源名称
                     request.Headers.Add("User-Agent", resouceName);
-                    request.Headers.Add("X-Microsoft-OutputFormat", "riff-24khz-16bit-mono-pcm");
+                    request.Headers.Add("X-Microsoft-OutputFormat", "riff-16khz-16bit-mono-pcm");
+                    //request.Headers.Add("X-Microsoft-OutputFormat", "riff-24khz-16bit-mono-pcm");
                     // 创建请求
                     Console.WriteLine("正在调用Azure TTS 服务,请稍后.. \n");
                     using (var response = await client.SendAsync(request).ConfigureAwait(false))

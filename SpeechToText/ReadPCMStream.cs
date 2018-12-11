@@ -37,7 +37,8 @@ namespace SpeechToText
             // 已经读完了，返回0
             if (nextStartPostion >= streamLength)
             {
-                return 0;
+                this.Close();
+                return 0; 
             }
 
             // 已读的数据减去未读的数据，表示剩余的数据长度
@@ -57,6 +58,8 @@ namespace SpeechToText
             stream.Read(dataBuffer, 0, readLength);
             // 累计总共读取的量
             nextStartPostion += readLength;
+
+            
 
             return readLength;
         }
