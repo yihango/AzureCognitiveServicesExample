@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 
 namespace ComputerVisionImgAnalyze
 {
+    // 文档地址：https://docs.microsoft.com/zh-cn/azure/cognitive-services/computer-vision/
+
     /// <summary>
     /// 图片场景分析
     /// </summary>

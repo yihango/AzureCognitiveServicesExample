@@ -267,6 +267,8 @@ namespace SpeechToText
                     stopRecognition.TrySetResult(0);
                 };
 
+          
+
                 // 开始连续的识别。使用stopcontinuousrecognition()来停止识别。
                 await recognizer.StartContinuousRecognitionAsync().ConfigureAwait(false);
 

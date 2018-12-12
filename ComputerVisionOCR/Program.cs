@@ -14,12 +14,18 @@ using System.Threading.Tasks;
 
 namespace ComputerVisionOCR
 {
+
+    // 文档地址：https://docs.microsoft.com/zh-cn/azure/cognitive-services/computer-vision/
+
+
     /// <summary>
     /// OCR图片文字识别
     /// </summary>
 
     static class Program
     {
+
+
         // Replace <Subscription Key> with your valid subscription key.
         const string apiKey = "";
         // api 地址
